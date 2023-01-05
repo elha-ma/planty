@@ -1,13 +1,101 @@
 /*
-Theme Name: ThemePlanty
-Author: Malika EL HAFIDI
+Theme Name: Theme planty
+Theme URI: http://planty.local/
+Author: Malika
+Description: Thème développé pour la marque de boisson énergisante Planty
 Version: 1.0
-Requires at least: 5.2
-Tested up to: 6.1
-Requires PHP: 7.0
-License: GNU General Public License v3 or Later
-License URI: https://www.gnu.org/licenses/gpl.html
-
-ThemePlanty WordPress Theme © 2022-2023 Malika
-ThemePlanty is distributed under the terms of the GNU GPL
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+Text Domain: themeplanty
+Template: intentionally-blank
+Tags: Planty, boisson, plantes
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Syne&display=swap'); 
+/* Import de la font Syne depuis Google Fonts et on l'applique sur tous les éléments de la page */
+body * {
+   font-family: 'Syne', sans-serif;
+   margin: 0;
+   
+}
+a{
+	text-decoration: none;
+   color:black;
+}
+
+/* En-tete de la page */
+.hea{
+	display: flex;
+	flex-direction: row;  
+}
+
+/* Permet de positionner les 2 liens de l'entête vers la droite */
+.pos-right {
+   display: flex;
+	margin-left: auto;
+	
+}
+
+/* Taille du logo */
+.logo{
+	width: 12rem;
+	height: 1.2rem;
+   padding:2rem;
+}
+
+
+/*style du menu de l'en-tête */
+.ul-menu { 
+   display: flex;
+   flex-direction: row;    
+   list-style: none;  
+}
+.li-menu{
+	padding:2rem;  
+  
+}
+.li-menu:hover{
+	font-weight: bold;
+}
+
+.button {	
+   background-color:#DC9F96;   
+   padding:2rem 3rem;
+   font-weight: bold;
+   font-size: large;
+}
+.button:hover{
+   background-color: #C02E44;   
+}
+.white{
+   color:white;
+}
+
+.center{
+   text-align: center;
+}
+.pad{
+   padding:1.5rem;
+}
+.fond{
+   background-color: #ECE2DA;
+   border-radius: 0 0 10% 10%;
+}
+
+
+/*fusionner des images*/
+.parent {
+   position: relative;
+}
+img.superpose {
+   position: absolute;
+}
+.img1 {
+   z-index: 10;
+}
+.img2 {
+   z-index: 11;
+}
+.img3 {
+   z-index: 12;
+}

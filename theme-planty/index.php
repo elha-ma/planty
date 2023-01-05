@@ -1,4 +1,9 @@
-<?php get_header(); ?>
-Test malika
+<?php
 
-<?php get_footer(); ?>
+get_header();
+
+the_content();
+
+get_footer();
+
+?>
