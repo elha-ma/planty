@@ -13,10 +13,10 @@ Tags: Planty, boisson, plantes
 
 @import url('https://fonts.googleapis.com/css2?family=Syne&display=swap'); 
 /* Import de la font Syne depuis Google Fonts et on l'applique sur tous les éléments de la page */
-body * {
+* {
    font-family: 'Syne', sans-serif;
    margin: 0;
-   
+   padding:0;
 }
 a{
 	text-decoration: none;
