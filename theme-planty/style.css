@@ -121,3 +121,11 @@ img.superpose {
 .img3 {
    z-index: 12;
 }
+
+/*Modidier la mise à l'échelle du texte en jouant sur l'ordonnée*/
+.ord{
+   transform: scaleY(0.5);
+   font-size: 5rem;
+   font-weight: 900;
+   
+}
