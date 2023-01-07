@@ -149,13 +149,14 @@ a{
 
 
 /* Titres de la page d'accueil */
-.titleA{
+.title1{
    /*Modidier la mise à l'échelle du texte en jouant sur l'ordonnée*/
    transform: scaleY(0.4);  
    font-size: 5rem;
    font-weight: 900;      
 }
 
-.titleB{
+.title2{
    transform: scaleY(0.8);   
 }
+
