@@ -18,6 +18,7 @@ Tags: Planty, boisson, plantes
    margin: 0;
    padding:0;
    text-align: center;   
+  
 }
 
 body{
@@ -152,11 +153,15 @@ a{
 .title1{
    /*Modidier la mise à l'échelle du texte en jouant sur l'ordonnée*/
    transform: scaleY(0.4);  
-   font-size: 5rem;
-   font-weight: 900;      
+   font-size: 6rem;
+   font-weight: 900; 
+  
 }
 
 .title2{
    transform: scaleY(0.8);   
 }
 
+.img-repeat{
+   background-repeat: repeat-x;
+}
