@@ -21,21 +21,23 @@ Tags: Planty, boisson, plantes
 }
 
 body{
-   margin: 0 5rem 0 5rem;
+   margin: 0 10rem 0 10rem;
 }
 
 /* Les constantes */
 :root {
    --orange: #D2776A; 
+   --orange-light: #DC9F96;
    --green : #3B8E46; 
    --beige: #ECE2DA;
    --black: #000000;
    --white: #FFFFFF;
+   --red: #C02E44;
  }
 
 a{
 	text-decoration: none;
-   color:black;
+   color: var(--black);
 }
 
 /* En-tete de la page */
@@ -47,8 +49,7 @@ a{
 /* Permet de positionner les 2 liens de l'entête vers la droite */
 .pos-right {
    display: flex;
-	margin-left: auto;
-	
+	margin-left: auto;	
 }
 
 /* Taille du logo */
@@ -58,36 +59,41 @@ a{
    padding:2rem;
 }
 
-
 /*style du menu de l'en-tête */
 .ul-menu { 
    display: flex;
    flex-direction: row;    
    list-style: none;  
 }
+
 .li-menu{
 	padding:2rem;  
-  
 }
+
 .li-menu:hover{
 	font-weight: bold;
 }
 
 .button {	
-   background-color:#DC9F96;   
+   background-color: var(--orange-light);   
    padding:2rem 3rem;
    font-weight: bold;
    font-size: large;
 }
+
 .button:hover{
-   background-color: #C02E44;   
+   background-color: var(--red);   
 }
+
+/*les couleurs*/
 .white{
-   color:white;
+   color:var(--white);
 }
+
 .green{
    color: var(--green);
 }
+
 .orange{
    color: var(--orange);
 }
@@ -95,37 +101,61 @@ a{
 .center{
    text-align: center;
 }
+
 .pad{
    padding:1.5rem;
 }
+
 .fond{
    background-color: var(--beige);
 }
+
 .radius{
    border-radius: 0 0 10% 10%;
 }
 
-/*fusionner des images*/
-.parent {
-   position: relative;
-}
-img.superpose {
-   position: absolute;
-}
-.img1 {
-   z-index: 10;
-}
-.img2 {
-   z-index: 11;
-}
-.img3 {
-   z-index: 12;
+/*Superposer 3 images */
+.parent {  
+   position: relative; 
+   height: 40rem;    
+   width: 45rem; 
 }
 
-/*Modidier la mise à l'échelle du texte en jouant sur l'ordonnée*/
-.ord{
-   transform: scaleY(0.5);
+.img-accueil{
+   display: flex;
+   justify-content: center;
+}
+
+.superpose {
+   position: absolute;     
+}
+
+.img1 {
+   z-index: 1;
+   top:8rem;
+   left:0; 
+}
+
+.img2 {
+   z-index: 3;
+   left: 10rem;
+}
+
+.img3 {
+   z-index: 2;
+   top:8rem;
+   left: 22rem;   
+}
+
+
+/* Titres de la page d'accueil */
+.titleA{
+   /*Modidier la mise à l'échelle du texte en jouant sur l'ordonnée*/
+   transform: scaleY(0.4);  
    font-size: 5rem;
-   font-weight: 900;
-   
+   font-weight: 900;      
+}
+
+.titleB{
+   transform: scaleY(0.8);   
 }
