@@ -17,12 +17,12 @@ Tags: Planty, boisson, plantes
    font-family: 'Syne', sans-serif;
    margin: 0;
    padding:0;
-   text-align: center;   
+   /*text-align: center;   */
   
 }
 
-body{
-   margin: 0 10rem 0 10rem;
+body{  
+   margin:0;
 }
 
 /* Les constantes */
@@ -45,6 +45,7 @@ a{
 .hea{
 	display: flex;
 	flex-direction: row;  
+   background-color: var(--white);
 }
 
 /* Permet de positionner les 2 liens de l'entête vers la droite */
@@ -110,6 +111,12 @@ a{
 .fond{
    background-color: var(--beige);
 }
+.fond-green{
+   background-color: var(--green);
+}
+.fond-white{
+   background-color: var(--white);
+}
 
 .radius{
    border-radius: 0 0 10% 10%;
@@ -155,7 +162,7 @@ a{
    transform: scaleY(0.4);  
    font-size: 6rem;
    font-weight: 900; 
-  
+   
 }
 
 .title2{
@@ -164,4 +171,18 @@ a{
 
 .img-repeat{
    background-repeat: repeat-x;
+  
 }
+
+/*Formulaire commande */
+.form-commande{
+   display: flex;
+   flex-direction: row;
+   column-gap: 1rem;
+}
+
+.page-id-43{
+   background-color:var(--green);
+}
+
+

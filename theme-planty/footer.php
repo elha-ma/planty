@@ -1,5 +1,5 @@
 
-<div class="center pad">
+<div class="center pad fond-white">
     
     <a href="<?php echo home_url( '/' ); ?>"> 
         Mentions légales 
