@@ -91,6 +91,7 @@ a{
    color:var(--white);
    border: none;
    border-radius: 6px;
+   margin: 1rem;
 }
 
 .button:hover, .button-form:hover{
@@ -170,9 +171,8 @@ a{
 .title1{
    /*Modidier la mise à l'échelle du texte en jouant sur l'ordonnée*/
    transform: scaleY(0.4);  
-   font-size: 6rem;
-   font-weight: 900; 
-   
+   font-size: 5rem;
+   font-weight: 800;    
 }
 
 .title2{
@@ -181,7 +181,8 @@ a{
 
 .img-repeat{
    background-repeat: repeat-x;
-  
+   background-image: url("http://planty.local/wp-content/uploads/2022/12/Group-8-768x70.png");
+   width: 100%;
 }
 
 /*Formulaire commande */
@@ -193,22 +194,23 @@ a{
 }
 
 input[type="text"],
-input[type="email"] {
+input[type="email"],
+input[type="number"] {
   box-sizing: border-box;
   border: 0;
   border-radius: 6px;
-  padding: 2rem;
-  margin: 1rem;
- /* flex-grow: 2;*/
+  margin: 1rem 0 1rem 0;
   background: var(--white);
   resize: none;
   outline: none;
+  padding:0.2rem;
+  height:60px;
+  font-size:large;
 }
 
 label{
    color:var(--white);
-   font-size:x-large;
-  
+   font-size:x-large; 
 }
 
 /*fond d'écran de la page commande*/
@@ -216,9 +218,32 @@ label{
    background-color:var(--green);
 }
 
+/*titres du formulaire de commande*/
 .title-form
 {
    color:var(--white);
    font-size: xx-large;
+   margin-bottom: 1.5rem;
+   margin-top:1rem;
 }
+
+.column{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+}
+
+/*Page commande: les séparateurs */
+.trait{
+   background-color: var(--white);
+   width: 1px;
+   margin: 2rem;
+}
+.separ{
+   color: var(--white);
+   width:50%;   
+}
+
+
+
 
