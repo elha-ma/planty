@@ -16,10 +16,8 @@ Tags: Planty, boisson, plantes
 * {
    font-family: 'Syne', sans-serif;
    margin: 0;
-   padding:0;
-   /*text-align: center;   */
-  
-}
+   padding: 0;
+  }
 
 body{  
    margin:0;
@@ -42,18 +40,28 @@ a{
 }
 
 /* En-tete de la page */
-.hea{
+.header{
 	display: flex;
 	flex-direction: row;  
    background-color: var(--white);
 }
+@media screen and (max-width: 1024px) {
+   .header{      
+      flex-direction: column;    
+      justify-content:space-between;    
+   }   
+}
 
-/* Permet de positionner les 2 liens de l'entête vers la droite */
+/* Permet de positionner les liens de l'entête vers la droite */
 .pos-right {
    display: flex;
 	margin-left: auto;	
 }
-
+@media screen and (max-width: 1024px) {
+   .pos-right{      
+      margin-left: 0;     
+   }   
+}
 /* Taille du logo */
 .logo{
 	width: 12rem;
@@ -71,7 +79,6 @@ a{
 .li-menu{
 	padding:2rem;  
 }
-
 .li-menu:hover{
 	font-weight: bold;
 }
@@ -82,6 +89,11 @@ a{
    font-weight: bold;
    font-size: large;
    color:var(--white);
+}
+@media screen and (max-width: 1024px) {
+   .button{      
+      padding:0.5rem 1rem;     
+   }   
 }
 
 .button-form {	
