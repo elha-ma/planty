@@ -8,7 +8,7 @@ License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 Text Domain: themeplanty
 Template: intentionally-blank
-Tags: Planty, boisson, plantes
+Tags: Planty, boisson, plantes, énergisant
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Syne&display=swap'); 
@@ -33,7 +33,8 @@ body{
    --white: #FFFFFF;
    --red: #C02E44;
  }
-
+ 
+/*Liens de couleur noir et non soulignés*/
 a{
 	text-decoration: none;
    color: var(--black);
@@ -48,7 +49,6 @@ a{
 @media screen and (max-width: 1024px) {
    .header{      
       flex-direction: column;    
-      justify-content:space-between;    
    }   
 }
 
@@ -57,11 +57,7 @@ a{
    display: flex;
 	margin-left: auto;	
 }
-@media screen and (max-width: 1024px) {
-   .pos-right{      
-      margin-left: 0;     
-   }   
-}
+
 /* Taille du logo */
 .logo{
 	width: 12rem;
@@ -79,10 +75,16 @@ a{
 .li-menu{
 	padding:2rem;  
 }
+@media screen and (max-width: 1024px) {
+   .li-menu{      
+      padding:0.5rem 1rem;
+}
+}
 .li-menu:hover{
 	font-weight: bold;
-}
+} 
 
+/* style du bouton commander */
 .button {	
    background-color: var(--orange-light);   
    padding:2rem 3rem;
@@ -96,6 +98,7 @@ a{
    }   
 }
 
+/*style des boutons des formulaires*/
 .button-form {	
    background-color: var(--orange-light);   
    padding:1rem 2rem;
@@ -106,6 +109,7 @@ a{
    margin: 1rem;
 }
 
+/*le bouton change de couleur au suvol*/
 .button:hover, .button-form:hover{
    background-color: var(--red);   
 }
@@ -134,13 +138,16 @@ a{
 .fond{
    background-color: var(--beige);
 }
+
 .fond-green{
    background-color: var(--green);
 }
+
 .fond-white{
    background-color: var(--white);
 }
 
+/*pour avoir l'effet arrondi*/
 .radius{
    border-radius: 0 0 10% 10%;
 }
@@ -166,25 +173,44 @@ a{
    top:8rem;
    left:0; 
 }
-
+@media screen and (max-width: 1024px) {
+   .img1{      
+      width:50%;   
+      top:4rem; 
+   }   
+}
 .img2 {
    z-index: 3;
    left: 10rem;
 }
-
+@media screen and (max-width: 1024px) {
+   .img2{      
+      width:50%;   
+   }   
+}
 .img3 {
    z-index: 2;
    top:8rem;
    left: 22rem;   
 }
-
+@media screen and (max-width: 1024px) {
+   .img3{     
+      width:50%;    
+      top:4rem;
+   }   
+}
 
 /* Titres de la page d'accueil */
 .title1{
    /*Modidier la mise à l'échelle du texte en jouant sur l'ordonnée*/
-   transform: scaleY(0.4);  
+   transform: scaleY(0.5);  
    font-size: 5rem;
    font-weight: 800;    
+}
+@media screen and (max-width: 1024px) {
+   .title1{              
+     font-size:2rem;
+   }   
 }
 
 .title2{
