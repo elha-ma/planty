@@ -157,6 +157,7 @@ a{
    position: relative; 
    height: 40rem;    
    width: 45rem; 
+   max-width:50%;
 }
 
 .img-accueil{
@@ -165,40 +166,44 @@ a{
 }
 
 .superpose {
-   position: absolute;     
+   position: absolute; 
+   max-width: 100%;
+   height: auto; 
 }
 
 .img1 {
    z-index: 1;
    top:8rem;
-   left:0; 
+   left:0;
 }
 @media screen and (max-width: 1024px) {
    .img1{      
-      width:50%;   
-      top:4rem; 
+      top:8%;    
    }   
 }
+
 .img2 {
-   z-index: 3;
-   left: 10rem;
+   z-index: 3; 
+   left:10rem; 
 }
 @media screen and (max-width: 1024px) {
    .img2{      
-      width:50%;   
+     left:50%;
    }   
 }
+
 .img3 {
    z-index: 2;
    top:8rem;
-   left: 22rem;   
+   left: 22rem;  
 }
 @media screen and (max-width: 1024px) {
-   .img3{     
-      width:50%;    
-      top:4rem;
+   .img3{  
+      top:8%;    
+     left:100%;    
    }   
 }
+
 
 /* Titres de la page d'accueil */
 .title1{
