@@ -101,12 +101,12 @@ a{
 /*style des boutons des formulaires*/
 .button-form {	
    background-color: var(--orange-light);   
-   padding:1rem 2rem;
+   padding:1rem 3rem;
    font-size:medium;
-   color:var(--white);
    border: none;
    border-radius: 6px;
    margin: 1rem;
+   color: var(--white);
 }
 
 /*le bouton change de couleur au suvol*/
@@ -149,7 +149,13 @@ a{
 
 /*pour avoir l'effet arrondi*/
 .radius{
-   border-radius: 0 0 10% 10%;
+   border-bottom-right-radius: 30% 15%;
+   border-bottom-left-radius:  30% 15%;
+}
+
+.radius-light{
+   border-bottom-right-radius: 30% 3%;
+   border-bottom-left-radius:  30% 3%;
 }
 
 /*Superposer 3 images */
@@ -205,12 +211,13 @@ a{
 }
 
 
-/* Titres de la page d'accueil */
+/* différents formats pour les titres */
 .title1{
    /*Modidier la mise à l'échelle du texte en jouant sur l'ordonnée*/
    transform: scaleY(0.5);  
    font-size: 5rem;
-   font-weight: 800;    
+   font-weight:900;    
+  
 }
 @media screen and (max-width: 1024px) {
    .title1{              
@@ -219,13 +226,27 @@ a{
 }
 
 .title2{
-   transform: scaleY(0.8);   
+   transform: scaleY(0.6);   
+   
 }
 
-.img-repeat{
-   background-repeat: repeat-x;
-   background-image: url("http://planty.local/wp-content/uploads/2022/12/Group-8-768x70.png");
-   width: 100%;
+.title3{   
+   transform: scaleY(0.5);  
+   font-size: 4rem;
+   font-weight: 900;
+   
+}
+@media screen and (max-width: 1024px) {
+   .title3{              
+     font-size:2rem;
+   }   
+}
+
+/*taille des légendes des galeries */
+.spectra-image-gallery__media-thumbnail-caption--overlay{
+   transform: scaleY(0.5);  
+   font-size: 4rem;
+   font-weight: 900;
 }
 
 /*Formulaire commande */
@@ -238,7 +259,9 @@ a{
 
 input[type="text"],
 input[type="email"],
-input[type="number"] {
+input[type="number"],
+textarea,
+.input-form {
   box-sizing: border-box;
   border: 0;
   border-radius: 6px;
@@ -251,8 +274,11 @@ input[type="number"] {
   font-size:large;
 }
 
+textarea{
+   height: 200px;
+}
+
 label{
-   color:var(--white);
    font-size:x-large; 
 }
 
@@ -282,11 +308,14 @@ label{
    width: 1px;
    margin: 2rem;
 }
+
 .separ{
    color: var(--white);
    width:50%;   
 }
 
-
+.alignleft{
+   left: 22rem;  
+}
 
 
