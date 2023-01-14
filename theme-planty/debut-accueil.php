@@ -1,7 +1,7 @@
 <!--Section permettant de composer l'image centrale de la page d'accueil en superposant 3 images-->
 <section class="fond radius center">
 
-      <p class="green title1">BOISSON ÉNERGISANTE <BR/> 100% NATURELLE</p>
+      <p class="green title1 space">BOISSON ÉNERGISANTE <BR/> 100% NATURELLE</p>
 
       <article class="img-accueil">
         

@@ -149,8 +149,8 @@ a{
 
 /*pour avoir l'effet arrondi*/
 .radius{
-   border-bottom-right-radius: 30% 15%;
-   border-bottom-left-radius:  30% 15%;
+   border-bottom-right-radius: 30% 10%;
+   border-bottom-left-radius:  30% 10%;
 }
 
 .radius-light{
@@ -257,6 +257,13 @@ a{
    width: 100%;  
 }
 
+/*Formulaire contact*/
+.form-contact{
+   display: flex;
+   flex-direction: column;  
+   align-items: center;  
+}
+
 input[type="text"],
 input[type="email"],
 input[type="number"],
@@ -294,6 +301,10 @@ label{
    font-size: xx-large;
    margin-bottom: 1.5rem;
    margin-top:1rem;
+}
+
+.space{
+   padding-top:3rem;
 }
 
 .column{
