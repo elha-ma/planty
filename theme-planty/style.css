@@ -109,22 +109,8 @@ a{
    color: var(--white);
 }
 
-/*style du bouton ok de la page commande */
-.button-ok {	
-   background-color: var(--orange-light);   
-   padding:0.3rem 0.8rem;
-   font-size:medium;
-   border: none;
-   border-radius: 6px;  
-   color: var(--white);
-   height: 3.7rem;
-   width: 6rem;
-}
 
-/*le bouton change de couleur au suvol*/
-.button:hover, .button-form:hover, button-ok:hover{
-   background-color: var(--red);   
-}
+
 
 /*les couleurs*/
 .white{
@@ -237,7 +223,7 @@ a{
 }
 @media screen and (max-width: 1024px) {
    .title1{              
-     font-size:2rem;
+     font-size:3rem;
    }   
 }
 
@@ -265,18 +251,6 @@ a{
    font-weight: 900;
 }
 
-/*Formulaire commande */
-.form-commande{
-   display: flex;
-   flex-direction: row;  
-   justify-content: center;    
-}
-@media screen and (max-width: 1024px) {
-   .form-commande{              
-      flex-direction: column;
-   }   
-}
-
 /*Formulaire contact*/
 .form-contact{
    display: flex;
@@ -284,6 +258,18 @@ a{
    align-items: center;  
 }
 
+/*formulaire Infos*/
+.form-infos{
+   display: flex;
+   flex-direction: row;  
+   justify-content: center;       
+}
+@media screen and (max-width: 768px) {
+   .form-infos{              
+      flex-direction: column; 
+      margin:1rem;
+   }   
+}
 
 .input-form {
   box-sizing: border-box;
@@ -293,9 +279,13 @@ a{
   background: var(--white);
   resize: none;
   outline: none;
-  padding:0.2rem;
-  height:60px;
+  padding:0.2rem; 
   font-size:large;
+}
+
+input[type="text"],
+input[type="email"]{
+   height:60px;
 }
 
 textarea{
@@ -305,6 +295,70 @@ textarea{
 label{
    font-size:x-large; 
 }
+
+/*Formulaire commande */
+.form-commande{
+   display: flex;
+   flex-direction: row;  
+   justify-content:flex-start; 
+   height:60px;
+}
+
+/*style des boutons + et - de la page commande */
+.button-number {	
+   background-color: var(--orange-light);   
+   padding:0.3rem 0.5rem;
+   font-size:medium;    
+   color: var(--white);  
+   height:50%;
+}
+
+.button-plus{
+   border-top-right-radius: 6px;
+   border-bottom: solid;
+   border-width: 1px;
+   border-color: var(--white);
+}
+
+.button-less{
+   border-bottom-right-radius: 6px;
+}
+
+.input-number{  
+   border-bottom-left-radius: 6px;
+   border-top-left-radius: 6px;    
+   text-align: center;  
+   font-size:large; 
+   padding:0.5rem 1rem;  
+   width:4rem;
+   height:60px;
+   box-sizing: border-box;
+   border:none;   
+   background: var(--white);
+}
+
+/*style du bouton ok*/
+.button-ok {	
+   background-color: var(--orange-light);   
+   padding:0.5rem 0.8rem;
+   font-size:large;
+   border: none;
+   border-radius: 6px;  
+   color: var(--white);
+   width: 6rem;
+   height:60px;
+}
+@media screen and (max-width: 960px) {
+   .button-ok{              
+      width: 4rem;}
+   }  
+
+/*le bouton change de couleur au suvol*/
+.button:hover, .button-form:hover, .button-ok:hover {
+   background-color: var(--red);   
+}
+
+
 
 /*fond d'écran de la page commande*/
 .page-id-43{
@@ -336,10 +390,10 @@ label{
    width: 1px;
    margin: 2rem;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
    .trait{              
       width: 0;
-   margin: 0;
+      margin: 0;
 }
    }   
 
@@ -353,36 +407,14 @@ label{
    left: 22rem;  
 }
 
-/*style des boutons + et - de la pages commande */
-.button-number {	
-   background-color: var(--orange-light);   
-   padding:0.3rem 0.8rem;
-   font-size:medium;    
-   color: var(--white);  
-}
 
-.button-plus{
-   border-top-right-radius: 6px;
-   border-bottom: solid;
-   border-width: 1px;
-   border-color: var(--white);
-}
 
-.button-less{
-   border-bottom-right-radius: 6px;
-}
-
-.input-number{  
-   border-bottom-left-radius: 6px;
-   border-top-left-radius: 6px;  
-  
-   
-   padding:0.3rem 0.8rem;  
-   font-size:large; 
-   height:3.7rem;
-   width:3rem;
-   box-sizing: border-box;
-   border: 0;   
-   background: var(--white);
-}
-
+/*affichage de la gaellerie de la page commande*/
+.wrap{
+   width:50%;
+   min-width:50rem;
+}@media screen and (max-width: 960px) {
+   .wrap{              
+      width:100%;
+      min-width:0;}
+   }   
