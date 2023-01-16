@@ -109,8 +109,20 @@ a{
    color: var(--white);
 }
 
+/*style du bouton ok de la page commande */
+.button-ok {	
+   background-color: var(--orange-light);   
+   padding:0.3rem 0.8rem;
+   font-size:medium;
+   border: none;
+   border-radius: 6px;  
+   color: var(--white);
+   height: 3.7rem;
+   width: 6rem;
+}
+
 /*le bouton change de couleur au suvol*/
-.button:hover, .button-form:hover{
+.button:hover, .button-form:hover, button-ok:hover{
    background-color: var(--red);   
 }
 
@@ -133,6 +145,10 @@ a{
 
 .pad{
    padding:1.5rem;
+}
+
+.marg{
+   margin: 0.5rem;
 }
 
 .fond{
@@ -253,8 +269,12 @@ a{
 .form-commande{
    display: flex;
    flex-direction: row;  
-   justify-content: center;
-   width: 100%;  
+   justify-content: center;    
+}
+@media screen and (max-width: 1024px) {
+   .form-commande{              
+      flex-direction: column;
+   }   
 }
 
 /*Formulaire contact*/
@@ -264,10 +284,7 @@ a{
    align-items: center;  
 }
 
-input[type="text"],
-input[type="email"],
-input[type="number"],
-textarea,
+
 .input-form {
   box-sizing: border-box;
   border: 0;
@@ -319,6 +336,13 @@ label{
    width: 1px;
    margin: 2rem;
 }
+@media screen and (max-width: 1024px) {
+   .trait{              
+      width: 0;
+   margin: 0;
+}
+   }   
+
 
 .separ{
    color: var(--white);
@@ -329,4 +353,36 @@ label{
    left: 22rem;  
 }
 
+/*style des boutons + et - de la pages commande */
+.button-number {	
+   background-color: var(--orange-light);   
+   padding:0.3rem 0.8rem;
+   font-size:medium;    
+   color: var(--white);  
+}
+
+.button-plus{
+   border-top-right-radius: 6px;
+   border-bottom: solid;
+   border-width: 1px;
+   border-color: var(--white);
+}
+
+.button-less{
+   border-bottom-right-radius: 6px;
+}
+
+.input-number{  
+   border-bottom-left-radius: 6px;
+   border-top-left-radius: 6px;  
+  
+   
+   padding:0.3rem 0.8rem;  
+   font-size:large; 
+   height:3.7rem;
+   width:3rem;
+   box-sizing: border-box;
+   border: 0;   
+   background: var(--white);
+}
 
