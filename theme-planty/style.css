@@ -34,7 +34,7 @@ body{
    --red: #C02E44;
  }
  
-/*Liens de couleur noir et non soulignés*/
+/*mettre les liens en couleur noir et non soulignés*/
 a{
 	text-decoration: none;
    color: var(--black);
@@ -80,11 +80,12 @@ a{
       padding:0.5rem 1rem;
 }
 }
+
 .li-menu:hover{
 	font-weight: bold;
 } 
 
-/* style du bouton commander */
+/* style du bouton commander dans l'en-tête */
 .button {	
    background-color: var(--orange-light);   
    padding:2rem 3rem;
@@ -98,21 +99,7 @@ a{
    }   
 }
 
-/*style des boutons des formulaires*/
-.button-form {	
-   background-color: var(--orange-light);   
-   padding:1rem 3rem;
-   font-size:medium;
-   border: none;
-   border-radius: 6px;
-   margin: 1rem;
-   color: var(--white);
-}
-
-
-
-
-/*les couleurs*/
+/*variables*/
 .white{
    color:var(--white);
 }
@@ -161,22 +148,27 @@ a{
 }
 
 /*Superposer 3 images */
+.img-accueil{
+   display: flex;
+   justify-content:center;  
+}
+
 .parent {  
    position: relative; 
    height: 40rem;    
-   width: 45rem;  
-   max-width:40%;  
+   width: 40rem;
+   max-width:100%;  
 }
-
-.img-accueil{
-   display: flex;
-   justify-content: center;
+@media screen and (max-width: 768px) {
+   .parent{              
+      height: 30rem; 
+   }   
 }
 
 .superpose {
    position: absolute; 
-   max-width: 100%;
-   height: auto; 
+   max-width: 50%;
+   height:auto;
 }
 
 .img1 {
@@ -195,19 +187,15 @@ a{
 .img3 {
    z-index: 2;
    top:8%;
-   left: 50%;  
+   left: 45%;  
 }
-
-
-
 
 /* différents formats pour les titres */
 .title1{
    /*Modidier la mise à l'échelle du texte en jouant sur l'ordonnée*/
    transform: scaleY(0.5);  
    font-size: 5rem;
-   font-weight:900;    
-  
+   font-weight:900;      
 }
 @media screen and (max-width: 1024px) {
    .title1{              
@@ -216,15 +204,13 @@ a{
 }
 
 .title2{
-   transform: scaleY(0.6);   
-   
+   transform: scaleY(0.6);     
 }
 
 .title3{   
    transform: scaleY(0.5);  
    font-size: 4rem;
-   font-weight: 900;
-   
+   font-weight: 900;   
 }
 @media screen and (max-width: 1024px) {
    .title3{              
@@ -238,10 +224,21 @@ a{
    font-size: 4rem;
    font-weight: 900;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1280px) {
    .spectra-image-gallery__media-thumbnail-caption--overlay{              
      font-size:2rem;
    }   
+}
+
+/*style des boutons des formulaires*/
+.button-form {	
+   background-color: var(--orange-light);   
+   padding:1rem 3rem;
+   font-size:medium;
+   border: none;
+   border-radius: 6px;
+   margin: 1rem;
+   color: var(--white);
 }
 
 /*Formulaire contact*/
@@ -265,7 +262,6 @@ a{
 }
 
 .input-form {
-  /*box-sizing: border-box;*/
   box-sizing: content-box;
   width:100%;
   border: 0;
@@ -392,7 +388,7 @@ label{
       width: 0;
       margin: 0;
 }
-   }   
+}   
 
 .separ{
    color: var(--white);
@@ -403,7 +399,6 @@ label{
    left: 22rem;  
 }
 
-
 /*affichage de la gaellerie de la page commande*/
 .wrap{
    width:50%;
@@ -412,5 +407,5 @@ label{
    .wrap{              
       width:100%;
       min-width:0;}
-   }   
+}   
 

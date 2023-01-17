@@ -21,14 +21,17 @@ function theme_enqueue_styles()
     wp_enqueue_style('theme-style', get_stylesheet_directory_uri() . '/style.css', array(), filemtime(get_stylesheet_directory() . '/style.css'));
 }
 
-function add_classes_on_li($classes, $item, $args) {
+ 
+
+function add_classes_on_li($classes) {
   $classes[] = 'li-menu';
   return $classes;
 }
-add_filter('nav_menu_css_class','add_classes_on_li',10,3);
+add_filter('nav_menu_css_class','add_classes_on_li',10,1);
+
 
 //Ajouter lien Admin si l'utilisateur connecté est l'administrateur
-function add_link_admin($items, $args)
+function add_link_admin($items)
 {
  if(is_user_logged_in())
  {
@@ -65,11 +68,11 @@ function add_link_admin($items, $args)
 
   return $newitems;
 }
-add_filter('wp_nav_menu_items', 'add_link_admin', 1, 2);
+add_filter('wp_nav_menu_items', 'add_link_admin', 10, 1);
+
 
 
 function last_menu_class($items) {
- // $items[1]->classes[] = 'first';
   $items[count($items)]->classes[] = 'button';
   return $items;
 }
