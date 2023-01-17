@@ -164,8 +164,8 @@ a{
 .parent {  
    position: relative; 
    height: 40rem;    
-   width: 45rem; 
-   max-width:50%;
+   width: 45rem;  
+   max-width:40%;  
 }
 
 .img-accueil{
@@ -181,36 +181,24 @@ a{
 
 .img1 {
    z-index: 1;
-   top:8rem;
+   top:8%;
    left:0;
 }
-@media screen and (max-width: 1024px) {
-   .img1{      
-      top:8%;    
-   }   
-}
+
 
 .img2 {
    z-index: 3; 
-   left:10rem; 
+   left:22%; 
 }
-@media screen and (max-width: 1024px) {
-   .img2{      
-     left:50%;
-   }   
-}
+
 
 .img3 {
    z-index: 2;
-   top:8rem;
-   left: 22rem;  
+   top:8%;
+   left: 50%;  
 }
-@media screen and (max-width: 1024px) {
-   .img3{  
-      top:8%;    
-     left:100%;    
-   }   
-}
+
+
 
 
 /* différents formats pour les titres */
