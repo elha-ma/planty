@@ -23,24 +23,28 @@ function theme_enqueue_styles()
 
  
 
+//style du menu de l'en-tête
 function add_classes_on_li($classes) {
   $classes[] = 'li-menu';
   return $classes;
 }
-add_filter('nav_menu_css_class','add_classes_on_li',10,1);
+add_filter('nav_menu_css_class','add_classes_on_li',1,1);
+
+function last_menu_class($items) {
+  $items[count($items)]->classes[] = 'button';
+  return $items;
+}
+add_filter('wp_nav_menu_objects', 'last_menu_class',1,1);
 
 
 //Ajouter lien Admin si l'utilisateur connecté est l'administrateur
 function add_link_admin($items)
 {
+  $newitems = ''; 
+  $mainMenu = wp_get_nav_menu_items('menu-entete');	
+
  if(is_user_logged_in())
  {
-   // $newitems = $items;
-    //$newitems .= '<li class="li-menu"><a title="Admin" href="'. admin_url() .'">Admin</a></li>';
-
-    $newitems = '';  
-
-    $mainMenu = wp_get_nav_menu_items('menu-entete');		
 
     if($mainMenu):
 
@@ -63,20 +67,26 @@ function add_link_admin($items)
   }
   else
   {
-    $newitems = $items;    
+    if($mainMenu):
+
+      foreach($mainMenu as $navItem):  
+        if ($navItem->title == 'Commander')
+        {
+          $newitems .= '<li class="button"><a href="'.$navItem->url.'" title="'.$navItem->title.'" class="white">'.$navItem->title.'</a></li>';
+        }
+        else 
+        {
+          $newitems .= '<li class="li-menu"><a href="'.$navItem->url.'" title="'.$navItem->title.'">'.$navItem->title.'</a></li>';
+        }
+      endforeach;
+    endif;
   }
 
   return $newitems;
 }
-add_filter('wp_nav_menu_items', 'add_link_admin', 10, 1);
+add_filter('wp_nav_menu_items', 'add_link_admin', 1, 1);
 
 
-
-function last_menu_class($items) {
-  $items[count($items)]->classes[] = 'button';
-  return $items;
-}
-add_filter('wp_nav_menu_objects', 'last_menu_class',10,1);
 
 
                   

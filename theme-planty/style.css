@@ -27,6 +27,7 @@ body{
 :root {
    --orange: #D2776A; 
    --orange-light: #DC9F96;
+   --or: #E0B9B4;   
    --green : #3B8E46; 
    --beige: #ECE2DA;
    --black: #000000;
@@ -34,7 +35,7 @@ body{
    --red: #C02E44;
  }
  
-/*mettre les liens en couleur noir et non soulignés*/
+/*mettre les liens non soulignés*/
 a{
 	text-decoration: none;
    color: var(--black);
@@ -46,7 +47,7 @@ a{
 	flex-direction: row;  
    background-color: var(--white);
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
    .header{      
       flex-direction: column;    
    }   
@@ -75,7 +76,7 @@ a{
 .li-menu{
 	padding:2rem;  
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
    .li-menu{      
       padding:0.5rem 1rem;
 }
@@ -93,7 +94,7 @@ a{
    font-size: large;
    color:var(--white);
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
    .button{      
       padding:0.5rem 1rem;     
    }   
@@ -110,6 +111,10 @@ a{
 
 .orange{
    color: var(--orange);
+}
+
+.black{
+   color:var(--black);
 }
 
 .center{
@@ -156,12 +161,12 @@ a{
 .parent {  
    position: relative; 
    height: 40rem;    
-   width: 40rem;
+   width: 50rem;
    max-width:100%;  
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
    .parent{              
-      height: 30rem; 
+      height: 25rem; 
    }   
 }
 
@@ -232,7 +237,7 @@ a{
 
 /*style des boutons des formulaires*/
 .button-form {	
-   background-color: var(--orange-light);   
+   background-color: var(--or);   
    padding:1rem 3rem;
    font-size:medium;
    border: none;
@@ -252,7 +257,9 @@ a{
 .form-infos{
    display: flex;
    flex-direction: row;  
-   justify-content: center;       
+   justify-content:space-between; 
+   margin:0;
+
 }
 @media screen and (max-width: 960px) {
    .form-infos{              
@@ -330,7 +337,7 @@ label{
 
 /*style du bouton ok*/
 .button-ok {	
-   background-color: var(--orange-light);   
+   background-color: var(--or);   
    padding:0.5rem 0.8rem;
    font-size:large;
    border: none;
