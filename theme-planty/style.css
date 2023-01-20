@@ -11,7 +11,7 @@ Template: intentionally-blank
 Tags: Planty, boisson, plantes, énergisant
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Syne&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap'); 
 /* Import de la font Syne depuis Google Fonts et on l'applique sur tous les éléments de la page */
 * {
    font-family: 'Syne', sans-serif;
@@ -83,15 +83,14 @@ a{
 }
 
 .li-menu:hover{
-	font-weight: bold;
+	font-weight:600;
 } 
 
 /* style du bouton commander dans l'en-tête */
 .button {	
    background-color: var(--orange-light);   
    padding:2rem 3rem;
-   font-weight: bold;
-   font-size: large;
+   font-weight: 600;  
    color:var(--white);
 }
 @media screen and (max-width: 768px) {
@@ -197,41 +196,39 @@ a{
 
 /* différents formats pour les titres */
 .title1{
-   /*Modidier la mise à l'échelle du texte en jouant sur l'ordonnée*/
-   transform: scaleY(0.5);  
-   font-size: 5rem;
-   font-weight:900;      
+   font-size: 2.5rem;
+   font-weight:800;     
 }
 @media screen and (max-width: 1024px) {
    .title1{              
-     font-size:3rem;
+     font-size:1.5rem;
    }   
 }
 
 .title2{
-   transform: scaleY(0.6);     
+   font-size: 2rem;
+   font-weight: 700;   
 }
 
 .title3{   
-   transform: scaleY(0.5);  
-   font-size: 4rem;
-   font-weight: 900;   
+   
+   font-size: 2rem;
+   font-weight: 800;   
 }
 @media screen and (max-width: 1024px) {
    .title3{              
-     font-size:2rem;
+     font-size:1rem;
    }   
 }
 
 /*taille des légendes des galeries */
 .spectra-image-gallery__media-thumbnail-caption--overlay{
-   transform: scaleY(0.5);  
-   font-size: 4rem;
-   font-weight: 900;
+   font-size: 3.5rem;
+   font-weight: 800;
 }
 @media screen and (max-width: 1280px) {
    .spectra-image-gallery__media-thumbnail-caption--overlay{              
-     font-size:2rem;
+     font-size:1rem;
    }   
 }
 
@@ -291,7 +288,7 @@ textarea{
 }
 
 label{
-   font-size:x-large; 
+   font-size:large; 
 }
 
 /*Formulaire commande */
