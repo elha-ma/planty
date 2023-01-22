@@ -169,16 +169,32 @@ a{
 
 .parent {  
    position: relative; 
+   display: flex;
+   align-items: center;
    height: 40rem;    
    width: 50rem;
-   max-width:100%;  
+   max-width:70%;  
+}
+@media screen and (max-width: 1024px) {
+   .parent{              
+      height: 32rem; 
+   }   
+}
+@media screen and (max-width: 768px) {
+   .parent{           
+      height: 24rem; 
+   }   
 }
 @media screen and (max-width: 576px) {
    .parent{              
-      height: 25rem; 
+      height: 18rem; 
    }   
 }
-
+@media screen and (max-width: 420px) {
+   .parent{              
+      height: 14rem; 
+   }   
+}
 .superpose {
    position: absolute; 
    max-width: 50%;
@@ -187,22 +203,17 @@ a{
 
 .img1 {
    z-index: 1;
-   top:20%;
-   left:0;
+   left:5%;
 }
-
 
 .img2 {
-   z-index: 3; 
-   top:0;
-   left:20%;    
+   z-index: 3;    
+   left:26%;    
 }
-
 
 .img3 {
    z-index: 2;
-   top:20%;
-   left: 44%;  
+   left: 48%;  
 }
 
 /* différents formats pour les titres */
@@ -408,7 +419,7 @@ label{
 @media screen and (max-width: 1024px) {
    .space{              
       padding-top: 2rem;
-      padding-bottom: 1rem;
+      padding-bottom: 1.5rem;
 }
 }   
 
