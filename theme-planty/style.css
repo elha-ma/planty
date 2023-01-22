@@ -461,3 +461,7 @@ label{
       min-width:0;}
 }   
 
+/*supprimer un champ ajouté par le plugin contact form , qui empechait de centrer les boutons */ 
+.wpcf7-spinner {
+   display: none;
+}
