@@ -12,7 +12,7 @@ Tags: Planty, boisson, plantes, énergisant
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap'); 
-/* Import de la font Syne depuis Google Fonts et on l'applique sur tous les éléments de la page */
+/* Import de la font SYNE depuis Google Fonts et on l'applique sur tout le site */
 * {
    font-family: 'Syne', sans-serif;
    margin: 0;
@@ -49,7 +49,8 @@ a{
 }
 @media screen and (max-width: 768px) {
    .header{      
-      flex-direction: column;    
+      flex-direction: column;   
+      align-items: center; 
    }   
 }
 
@@ -58,7 +59,11 @@ a{
    display: flex;
 	margin-left: auto;	
 }
-
+@media screen and (max-width: 768px) {
+   .pos-right{      
+      margin-left: 0;
+   }   
+}
 /* Taille du logo */
 .logo{
 	width: 12rem;
@@ -123,6 +128,11 @@ a{
 .pad{
    padding:1.5rem;
 }
+@media screen and (max-width: 768px) {
+   .pad{              
+      padding:0.5rem; 
+   }   
+}
 
 .marg{
    margin: 0.5rem;
@@ -177,31 +187,37 @@ a{
 
 .img1 {
    z-index: 1;
-   top:8%;
+   top:20%;
    left:0;
 }
 
 
 .img2 {
    z-index: 3; 
-   left:22%; 
+   top:0;
+   left:20%;    
 }
 
 
 .img3 {
    z-index: 2;
-   top:8%;
-   left: 45%;  
+   top:20%;
+   left: 44%;  
 }
 
 /* différents formats pour les titres */
 .title1{
-   font-size: 2.5rem;
+   font-size: 3rem;
    font-weight:800;     
 }
 @media screen and (max-width: 1024px) {
    .title1{              
-     font-size:1.5rem;
+     font-size:2rem;
+   }   
+}
+@media screen and (max-width: 768px) {
+   .title1{              
+     font-size:1.3rem;
    }   
 }
 
@@ -209,26 +225,40 @@ a{
    font-size: 2rem;
    font-weight: 700;   
 }
+@media screen and (max-width: 1024px) {
+   .title2{              
+     font-size:1.5rem;
+   }   
+}
 
-.title3{   
-   
+.title3{      
    font-size: 2rem;
    font-weight: 800;   
 }
 @media screen and (max-width: 1024px) {
    .title3{              
-     font-size:1rem;
+     font-size:1.5rem;
    }   
 }
 
 /*taille des légendes des galeries */
 .spectra-image-gallery__media-thumbnail-caption--overlay{
-   font-size: 3.5rem;
+   font-size: 2.8rem;
    font-weight: 800;
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1400px) {
    .spectra-image-gallery__media-thumbnail-caption--overlay{              
-     font-size:1rem;
+     font-size:2rem;
+   }   
+}
+@media screen and (max-width: 1024px) {
+   .spectra-image-gallery__media-thumbnail-caption--overlay{              
+     font-size:1.5rem;
+   }   
+}
+@media screen and (max-width: 768px) {
+   .spectra-image-gallery__media-thumbnail-caption--overlay{              
+     font-size:1.2rem;
    }   
 }
 
@@ -372,8 +402,15 @@ label{
 }
 
 .space{
-   padding-top:3rem;
+   padding-top: 5rem;
+   padding-bottom: 3rem;
 }
+@media screen and (max-width: 1024px) {
+   .space{              
+      padding-top: 2rem;
+      padding-bottom: 1rem;
+}
+}   
 
 .column{
    display: flex;
