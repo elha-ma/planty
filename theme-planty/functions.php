@@ -13,14 +13,12 @@ function planty_setup() {
 add_action('after_setup_theme', 'planty_setup');
 
 
-//charger la feuille de style externe et du theme actif
+//charger la feuille de style du theme actif
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
 function theme_enqueue_styles()
 {
-    //wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
     wp_enqueue_style('theme-style', get_stylesheet_directory_uri() . '/style.css', array(), filemtime(get_stylesheet_directory() . '/style.css'));
 }
-
  
 
 //style du menu de l'en-tête
@@ -50,7 +48,6 @@ function add_link_admin($items)
 
       foreach($mainMenu as $navItem):  
 
-          
         if ($navItem->title == 'Nous rencontrer')
         {  
           $newitems .= '<li class="li-menu"><a href="'.$navItem->url.'" title="'.$navItem->title.'">'.$navItem->title.'</a></li>';
@@ -70,6 +67,7 @@ function add_link_admin($items)
     if($mainMenu):
 
       foreach($mainMenu as $navItem):  
+        
         if ($navItem->title == 'Commander')
         {
           $newitems .= '<li class="button"><a href="'.$navItem->url.'" title="'.$navItem->title.'" class="white">'.$navItem->title.'</a></li>';
@@ -81,7 +79,6 @@ function add_link_admin($items)
       endforeach;
     endif;
   }
-
   return $newitems;
 }
 add_filter('wp_nav_menu_items', 'add_link_admin', 1, 1);

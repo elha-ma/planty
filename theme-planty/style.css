@@ -20,7 +20,7 @@ Tags: Planty, boisson, plantes, énergisant
   }
 
 body{  
-   margin:0;
+   margin: 0;
 }
 
 /* Les constantes */
@@ -35,7 +35,7 @@ body{
    --red: #C02E44;
  }
  
-/*mettre les liens non soulignés*/
+/*Style des liens*/
 a{
 	text-decoration: none;
    color: var(--black);
@@ -64,11 +64,12 @@ a{
       margin-left: 0;
    }   
 }
+
 /* Taille du logo */
 .logo{
 	width: 12rem;
 	height: 1.2rem;
-   padding:2rem;
+   padding: 2rem;
 }
 
 /*style du menu de l'en-tête */
@@ -79,11 +80,11 @@ a{
 }
 
 .li-menu{
-	padding:2rem;  
+	padding: 2rem;  
 }
 @media screen and (max-width: 768px) {
    .li-menu{      
-      padding:0.5rem 1rem;
+      padding: 0.5rem 1rem;
 }
 }
 
@@ -128,7 +129,7 @@ a{
 .pad{
    padding:1.5rem;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
    .pad{              
       padding:0.5rem; 
    }   
@@ -173,7 +174,7 @@ a{
    align-items: center;
    height: 40rem;    
    width: 50rem;
-   max-width:70%;  
+   max-width: 70%;  
 }
 @media screen and (max-width: 1024px) {
    .parent{              
@@ -195,20 +196,21 @@ a{
       height: 14rem; 
    }   
 }
+
 .superpose {
    position: absolute; 
    max-width: 50%;
-   height:auto;
+   height: auto;
 }
 
 .img1 {
    z-index: 1;
-   left:5%;
+   left: 5%;
 }
 
 .img2 {
    z-index: 3;    
-   left:26%;    
+   left: 26%;    
 }
 
 .img3 {
@@ -219,16 +221,16 @@ a{
 /* différents formats pour les titres */
 .title1{
    font-size: 3rem;
-   font-weight:800;     
+   font-weight: 800;     
 }
 @media screen and (max-width: 1024px) {
    .title1{              
-     font-size:2rem;
+     font-size: 2rem;
    }   
 }
 @media screen and (max-width: 768px) {
    .title1{              
-     font-size:1.3rem;
+     font-size: 1.3rem;
    }   
 }
 
@@ -238,7 +240,7 @@ a{
 }
 @media screen and (max-width: 1024px) {
    .title2{              
-     font-size:1.5rem;
+     font-size: 1.5rem;
    }   
 }
 
@@ -248,7 +250,7 @@ a{
 }
 @media screen and (max-width: 1024px) {
    .title3{              
-     font-size:1.5rem;
+     font-size: 1.5rem;
    }   
 }
 
@@ -259,25 +261,25 @@ a{
 }
 @media screen and (max-width: 1400px) {
    .spectra-image-gallery__media-thumbnail-caption--overlay{              
-     font-size:2rem;
+     font-size: 2rem;
    }   
 }
 @media screen and (max-width: 1024px) {
    .spectra-image-gallery__media-thumbnail-caption--overlay{              
-     font-size:1.5rem;
+     font-size: 1.5rem;
    }   
 }
 @media screen and (max-width: 768px) {
    .spectra-image-gallery__media-thumbnail-caption--overlay{              
-     font-size:1.2rem;
+     font-size: 1.2rem;
    }   
 }
 
 /*style des boutons des formulaires*/
 .button-form {	
    background-color: var(--or);   
-   padding:1rem 3rem;
-   font-size:medium;
+   padding: 1rem 3rem;
+   font-size: medium;
    border: none;
    border-radius: 6px;
    margin: 1rem;
@@ -297,31 +299,30 @@ a{
    flex-direction: row;  
    justify-content:space-between; 
    margin:0;
-
 }
 @media screen and (max-width: 960px) {
    .form-infos{              
       flex-direction: column; 
-      margin:1rem;
+      margin: 1rem;
    }   
 }
 
 .input-form {
   box-sizing: content-box;
-  width:100%;
+  width: 100%;
   border: 0;
   border-radius: 6px;
   margin: 1rem 0 1rem 0;
   background: var(--white);
   resize: none;
   outline: none;
-  padding:0.2rem; 
-  font-size:large;
+  padding: 0.2rem; 
+  font-size: large;
 }
 
 input[type="text"],
 input[type="email"]{
-   height:60px;
+   height: 60px;
 }
 
 textarea{
@@ -329,24 +330,24 @@ textarea{
 }
 
 label{
-   font-size:large; 
+   font-size: large; 
 }
 
 /*Formulaire commande */
 .form-commande{
    display: flex;
    flex-direction: row;  
-   justify-content:flex-start; 
-   height:60px;
+   justify-content: flex-start; 
+   height: 60px;
 }
 
 /*style des boutons + et - de la page commande */
 .button-number {	
    background-color: var(--orange-light);   
-   padding:0.3rem 0.5rem;
-   font-size:medium;    
+   padding: 0.3rem 0.5rem;
+   font-size: medium;    
    color: var(--white);  
-   height:50%;
+   height: 50%;
 }
 
 .button-plus{
@@ -364,34 +365,43 @@ label{
    border-bottom-left-radius: 6px;
    border-top-left-radius: 6px;    
    text-align: center;  
-   font-size:large; 
-   padding:0.5rem 1rem;  
-   width:4rem;
-   height:60px;
+   font-size: large; 
+   padding: 0.5rem 1rem;  
+   width: 4rem;
+   height: 60px;
    box-sizing: border-box;
-   border:none;   
+   border: none;   
    background: var(--white);
 }
 
 /*style du bouton ok*/
 .button-ok {	
    background-color: var(--or);   
-   padding:0.5rem 0.8rem;
-   font-size:large;
+   padding: 0.5rem 0.8rem;
+   font-size: large;
    border: none;
    border-radius: 6px;  
    color: var(--white);
    width: 6rem;
-   height:60px;
+   height: 60px;
 }
 @media screen and (max-width: 960px) {
    .input-number{
-      width:3rem;
+      width: 3rem;
    }
    .button-ok{              
-      width: 4rem;}
-
-   }  
+      width: 4rem;
+   }
+}  
+@media screen and (max-width: 300px) {
+   .input-number{
+      width: 1rem;
+   }
+   .button-ok{              
+      width: 2rem;
+      padding: 0;
+   }
+}
 
 /*le bouton change de couleur au suvol*/
 .button:hover, .button-form:hover, .button-ok:hover {
@@ -400,18 +410,19 @@ label{
 
 /*fond d'écran de la page commande*/
 .page-id-43{
-   background-color:var(--green);
+   background-color: var(--green);
 }
 
 /*titres du formulaire de commande*/
 .title-form
 {
-   color:var(--white);
+   color: var(--white);
    font-size: xx-large;
    margin-bottom: 1.5rem;
-   margin-top:1rem;
+   margin-top: 1rem;
 }
 
+/*pour le footer*/
 .space{
    padding-top: 5rem;
    padding-bottom: 3rem;
@@ -444,7 +455,7 @@ label{
 
 .separ{
    color: var(--white);
-   width:50%;   
+   width: 50%;   
 }
 
 .alignleft{
@@ -453,12 +464,13 @@ label{
 
 /*affichage de la gaellerie de la page commande*/
 .wrap{
-   width:50%;
-   min-width:60rem;
-}@media screen and (max-width: 960px) {
+   width: 50%;
+   min-width: 60rem;
+}
+@media screen and (max-width: 960px) {
    .wrap{              
-      width:100%;
-      min-width:0;}
+      width: 100%;
+      min-width: 0;}
 }   
 
 /*supprimer un champ ajouté par le plugin contact form , qui empechait de centrer les boutons */ 
